@@ -7,8 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1Tmgn_eG9jaPJ2-bAb8KLAnzj3e12UVwW
 """
 
-!pip install implicit scipy numpy pandas
-
+# `!pip install implicit scipy numpy pandas
+import os
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
 # --- CONFIGURATION ---
 FILENAME = "train-1.txt"
 OUTPUT_FILE = "tin_recommendations_final.txt"
